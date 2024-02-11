@@ -36,6 +36,69 @@
                 
             </ul>
 
-    </body>
 
+    </body>
+<body>
+    <table>
+    <h1>table and forms day </h1>
+    <tr>   <!--this is table row-->
+        <caption>world populations</caption>
+        <tr>country</tr>
+        <th>population</th>
+        <th>% of population</th>
+        <tr>
+            <td>china</td>    
+            <td>111111</td>
+            <td>18%</td>
+
+
+        </tr>
+        <tr>
+            <td>india</td>
+            <td>222222</td>
+            <td>10%</td>
+
+
+        </tr>
+
+
+
+
+    </tr>
+    </table>
+    <h2>Forms</h2>
+    <forms action="" method="post">
+
+        <!--post sends me form data on back end-->
+        <!--for value must match id value to link lable and input element-->
+
+        <lable for="">Full Name</lable>
+        <input type="text" id="fullname" name="fullname"
+        <lable for="insructions">special Instructions:</lable>
+        <textarea id="Instructions" name="Instructions"
+        row="3" cols="60"></textarea><br>
+        <p>choose a delivery method:</p>
+        <input type="radio" id="pickup" name="pickupdelivery"value="pickup">
+        <lable for="pickup">pickup</lable>
+        <input type="radio" id="delivery" name="pickupdelivery" value="delivery">
+        <lable for="delivery">delivery</lable> <br><br>
+        <lable for="neighborhood">neighborhood</lable><br>
+
+        <select id="neighborhood" name="neighborhood"> 
+            <option></option>
+            <option>westcott</option>
+            <option>Downtown</option>
+            <option>Eastwood</option>
+        </select>
+        <!--most form elements are inline no fowarding to he next line, no margin around-->
+        <input type="submit" value="send Form"
+
+
+
+
+
+    </forms>
+
+
+</body>
 </html>
