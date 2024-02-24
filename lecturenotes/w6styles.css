@@ -1,0 +1,13 @@
+h1 {color: orange;
+    font-size: 200%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2 {color: royalblue;
+    font-size: 150%;
+}
+p {color:#5f9ea0;}
+p a{color:blue}
+/*called a decendent selector*/
+
+#second {color:chartreuse;}
+/* this styps a class/*
