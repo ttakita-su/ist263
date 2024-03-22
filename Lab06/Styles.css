@@ -11,7 +11,8 @@ tr {color:brown}
 li {color:rgb(103, 148, 212)}
 caption {color:#6aaefc}
 h2 {color:rgb(41, 128, 157);
-font-size: 150%;}
+font-size: 150%;
+font-style: italic;}
 span {color:rgb(35, 109, 161)}
 /*called a decendent selector*/
 

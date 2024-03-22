@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: black;
+            padding: 10px;
+            color: white;
+            display: flex;
+        }
+        .flexend {justify-content: flex-end;} /* Corrected class name */
+        .around {justify-content: space-around;}
+        .between {justify-content: space-between;}
+        .split .left, .split .right { /* Corrected selector for consistency and clarity */
+            display: flex;
+            flex: 1; /* Added to ensure both sides can expand and use available space */
+        }
+        .split {justify-content: space-between;} /* This class is applied correctly */
+    </style>
+</head>
+<body>
+    <h1>Navigation 4 ways</h1>
+    <h2>Right Side</h2>
+
+    <nav class="flexend">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+
+    <h2>Space Around</h2> <!-- Added headings for clarity -->
+    <nav class="around">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+
+    <h2>Space Between</h2> <!-- Added headings for clarity -->
+    <nav class="between">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+
+    <h2>Split Navigation</h2> <!-- Added headings for clarity -->
+    <nav class="split">
+        <div class="left">
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Products</div> <!-- Corrected typo -->
+            <div>Contact</div>
+        </div>
+
+        <div class="right">
+            <div>Facebook</div>
+            <div>X</div>
+        </div>
+
+    </nav>
+
+</body>
+</html>

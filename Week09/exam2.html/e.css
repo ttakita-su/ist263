@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(otto.png);
+}
+
+h1 {
+    color: #0066cc;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: #990000;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* styles.css */
+.container {
+    width: 300px;
+    margin: 20px; /* Margin around the container */
+    padding: 15px; /* Padding inside the container */
+    border: 1px solid #333; /* Border around the container */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px; /* Margin around the box */
+    padding: 5px; /* Padding inside the box */
+    border: 2px dashed #990000; /* Border around the box */
+}
+
