@@ -2,11 +2,16 @@ nav a {color: #7050d9;}
 nav a:hover {color: #6763e0;}
 nav a:hover {background-color: #77c6e6;}
 .even {background-color:rgb(212, 167, 255)}
-nav {background-color: #e0ffb5;
+nav {background-color: #aaddff;
     padding: #a2f2bc;
     border:2px solid #413e3e;
     margin-bottom: 30px }
 h1 {text-align: center;}
+.image1 {
+    max-width: 100%;
+    height: auto;
+  }
+  
 
 
 
@@ -45,6 +50,28 @@ h1 {text-align: center;}
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-right: 90px;
     max-width: 25%;
+}
+.mapcon{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 800px){
+        
+    nav span {display: none;}
+    nav a {
+        display: block; /* Make each link take up its own line */
+        width: 100%; /* Optional: Make each link take up the full width */
+    
+        margin-bottom: 5px; /* Adds space below each link */
+        padding: 5px 0;  
+    }
+
+}
+
+
+@media only screen and (min-width: 801px){
+    .bignav {display: none;}
 }
 
 
