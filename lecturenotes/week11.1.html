@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Fixed the meta viewport tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JavaScript Program</title>
+    <style>
+        h1{cursor: pointer;}
+    </style>
+    <script>
+        function clicky() {
+            alert("Hello World!");
+        }
+        function loady() {
+            alert("Hello Loader!");
+        }
+        // Added missing hovery function
+        function hovery() {
+            alert("Hovered!");
+        }
+    </script>
+</head>
+<body onload="loady();"> <!-- Corrected the onload attribute -->
+    <h1 onclick="clicky();">Classic First JavaScript Program</h1>
+    <!-- Removed the 'on' attribute from the paragraph as it was incomplete and likely a mistake -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora illum atque, soluta consequuntur culpa dolores corporis suscipit quaerat sapiente eligendi necessitatibus maxime autem qui officiis. Quidem vitae modi corporis.</p>
+    <p onmouseover="hovery();">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quibusdam neque harum officia placeat atque perspiciatis, ipsa quae quod deserunt! Alias ullam ipsam aliquid! Ab accusamus animi quae repellat ullam!</p>
+</body>
+</html>
