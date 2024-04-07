@@ -1,0 +1,83 @@
+/* Style the navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #47576d; /* Change the navbar background color */
+    display: flex;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    margin: 0 10%;
+    flex: 1;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #ddd; /* Lighter shade for hover */
+    color: #555; /* Darker text color for contrast */
+
+}
+.logo {
+    height: 50px; /* Example size, adjust as needed */
+    width: auto;
+    margin: 10px;
+}
+
+
+/* If .main-image is a container for an <img> tag */
+.main-image {
+    display: block; /* Change display to block for margin auto to work */
+    width: 70%; /* Adjust width as needed */
+    margin: 20px auto; /* Add top and bottom margin, center horizontally */
+    height: auto; /* Let height be automatic to maintain aspect ratio */
+}
+
+/* Styles for the <img> tag inside .main-image to ensure it fills the container */
+.main-image img {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+}
+body {
+    background-color: #faf9f6; /* Set your desired background color here */
+}
+.flex-item {
+    display: flex;
+    align-items: center; /* Centers items vertically within each flex-item */
+    margin-bottom: 20px; /* Adds space between the two sections */
+}
+
+.image {
+    width: 150px; /* Adjust based on your image size */
+    height: auto;
+    margin-right: 20px; /* Adds space between the image and the text */
+}
+
+.text {
+    flex-grow: 1; /* Allows the text block to fill the remaining space */
+}
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Distributes space between and around items */
+}
+
+.image-item {
+    flex-basis: calc(33% - 20px); /* Allocates equal width to each item, adjusting for margin */
+    text-align: center; /* Centers the text below the image */
+}
+
+.image-item img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.image-item p {
+    margin-top: 10px; /* Adds space between the image and its description */
+}
+
