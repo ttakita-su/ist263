@@ -80,4 +80,6 @@ body {
 .image-item p {
     margin-top: 10px; /* Adds space between the image and its description */
 }
-
+h1 {
+    text-align: center; /* Centers the text horizontally */
+}
