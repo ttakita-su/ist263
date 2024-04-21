@@ -1,0 +1,88 @@
+nav a {color: #7050d9;}
+nav a:hover {color: #6763e0;}
+nav a:hover {background-color: #77c6e6;}
+.even {background-color:rgb(212, 167, 255)}
+nav {background-color: #aaddff;
+    padding: #a2f2bc;
+    border:2px solid #413e3e;
+    margin-bottom: 30px }
+h1 {text-align: center;}
+.image1 {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+
+
+.image-container {
+    display: flex;
+    justify-content: space-around; /* Adjusts spacing around each skill div */
+    max-width: 90ch; /* Ensures .image-container does not exceed its parent's width */
+    flex-wrap: nowrap; /* Prevents wrapping to a new line */
+    max-width: 75%;
+}
+
+.skill {
+    flex-basis: 20%; /* Gives each skill div a base width but allows shrink/grow */
+    display: flex;
+    flex-direction: column; /* Aligns the image and text vertically */
+    align-items: center; 
+    margin: 1px; 
+}
+
+.image-class {
+    width: 50px; 
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+
+.two {
+    display: flex;
+    flex-direction: column; /* Aligns items vertically */
+    background-color: lightblue; /* Sets the background color to light blue */
+    padding: 40px; /* Adds padding inside the container */
+    border-radius: 10px;
+    margin-left: auto; /* This will push .two to the far right */
+    width: 20%; /* Or whatever width you want for .two */
+    box-sizing: border-box; /* Makes sure padding is included in width calculation */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 90px;
+    max-width: 25%;
+}
+.mapcon{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 800px){
+        
+    nav span {display: none;}
+    nav a {
+        display: block; /* Make each link take up its own line */
+        width: 100%; /* Optional: Make each link take up the full width */
+    
+        margin-bottom: 5px; /* Adds space below each link */
+        padding: 5px 0;  
+    }
+
+}
+
+
+@media only screen and (min-width: 801px){
+    .bignav {display: none;}
+}
+body {
+    font-size: 1em; 
+}
+
+h1 {
+    font-size: 2em; 
+}
+
+p {
+    font-size: 0.9em;
+}
+
+

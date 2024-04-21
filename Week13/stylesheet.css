@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  border: 2px solid #000;
+  padding: 10px;
+  margin-bottom: 20px; /* Space between containers */
+}
+
+.flex-start { justify-content: flex-start; }
+.flex-end { justify-content: flex-end; }
+.center { justify-content: center; }
+.space-between { justify-content: space-between; }
+.space-around { justify-content: space-around; }
+.space-evenly { justify-content: space-evenly; }
+
+.item {
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+  margin: 5px; /* Space between items */
+}
+.parent-flex, .child-flex {
+  display: flex;
+  justify-content: center; /* Aligns horizontally */
+}
+.child-flex {
+  flex-direction: column; /* Stacks items vertically */
+}
+.nested-flex {
+  margin: 10px; /* Adds space around nested items */
+}

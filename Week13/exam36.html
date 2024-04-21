@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+<h1>JavaScript Practice</h1>
+
+<p>Click the buttons to see different alerts and functions in action:</p>
+
+<button onclick="showAlert()">Show Alert</button>
+<button onclick="showPrompt()">Show Prompt</button>
+<button onclick="showConfirm()">Show Confirm</button>
+<button onclick="changeColor()">Change Color</button>
+
+<script>
+    // Function to show an alert
+    function showAlert() {
+        alert("This is an alert message!");
+    }
+
+    // Function to show a prompt
+    function showPrompt() {
+        var name = prompt("Please enter your name:", "John Doe");
+        if (name != null) {
+            alert("Hello, " + name + "!");
+        }
+    }
+
+    // Function to show a confirm dialog
+    function showConfirm() {
+        var result = confirm("Are you sure you want to proceed?");
+        if (result) {
+            alert("You clicked OK!");
+        } else {
+            alert("You clicked Cancel!");
+        }
+    }
+
+    // Function to change the background color
+    function changeColor() {
+        document.body.style.backgroundColor = "lightblue";
+    }
+    function showAlert() {
+        
+    }
+</script>
+
+</body>
+</html>

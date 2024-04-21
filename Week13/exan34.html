@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JavaScript Function Example</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      margin: 20px;
+      text-align: center;
+      line-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="myBox">BoxBOX</div>
+  <button onclick="changeColo()">Change Color</button>
+
+  <script>
+    function changeColo() {
+      document.getElementById("myBox").style.backgroundColor = "lightgreen";
+    }
+  </script>
+</body>
+</html>
