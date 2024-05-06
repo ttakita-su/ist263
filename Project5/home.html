@@ -14,15 +14,40 @@
     </style>
 </head>
 <body>
-    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const imageSources = [
+                "../Images/website/1.jpg",
+                "../Images/website/3.1.jpg",
+                "../Images/website/2.jpg"
+            ];
+            let currentIndex = 0;
+            const featuredImage = document.getElementById('featured-image');
+
+            featuredImage.classList.add('fade-in');
+
+            function changeImage() {
+                featuredImage.classList.remove('fade-in');
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % imageSources.length;
+                    featuredImage.src = imageSources[currentIndex];
+                    featuredImage.alt = `Cover image ${currentIndex + 1}`;
+                    featuredImage.classList.add('fade-in');
+                }, 2000);
+            }
+
+            setInterval(changeImage, 6000);
+        });
+    </script>
     <div class="navbar">
         <a href="tokyo.html">Tokyo</a>
         <a href="home.html">Home</a>
         <a href="osaka.html">Osaka</a>
     </div>
-    <div class="main-image">
-        <img src="../Images/website/1.jpg" alt="1 Cover image mount fuji">
+    <div class="zmain-image">
+        <img src="../Images/website/1.jpg" alt="Cover image mount fuji" id="featured-image">
     </div>
+    
 
     <p style="margin: 20px; padding: 20px;background-color: azure;">
 

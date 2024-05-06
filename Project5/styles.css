@@ -44,11 +44,33 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 /* Main Image Styles */
+
 .main-image img {
-    display: block; /* Change display to block for margin auto to work */
-    width: 70%; /* Adjust width as needed */
+    width: 100%; /* Adjust based on your layout */
+    transition: opacity 2s ease-in-out;
     margin: 20px auto; /* Add top and bottom margin, center horizontally */
     height: auto; /* Let height be automatic to maintain aspect ratio */
+    justify-content: center;
+}
+.main-image img { display: block; 
+}
+
+.zmain-image {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically if the container has a specified height */
+    width: 100%; /* Adjust based on your layout */
+    height: 100vh; /* Example height; adjust as needed to see vertical centering */
+}
+
+.zmain-image img {
+    width: 70%; /* Adjust based on your layout */
+    transition: opacity 2s ease-in-out;
+    opacity: 0; /* Initially hidden, will be shown via JavaScript */
+}
+
+.zmain-image img.fade-in {
+    opacity: 1; /* Fully visible when the 'fade-in' class is added */
 }
 
 /* Flex Item Styles */
