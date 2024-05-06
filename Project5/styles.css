@@ -1,6 +1,6 @@
-/* General Styles */
+
 body {
-    background-color: A2AAAD; /* Set your desired background color here */
+    background-color: A2AAAD; 
     font-family: 'Roboto', sans-serif;
 }
 
@@ -8,10 +8,10 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Navigation Bar Styles */
+
 .navbar {
     overflow: hidden;
-    background-color: #b3c7f5; /* Navbar background color */
+    background-color: #b3c7f5; 
     display: flex;
 }
 
@@ -24,8 +24,8 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 10%;
     flex: 1;
     font-family: Arial, Helvetica, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 600; /* Semi-bold */
-    font-size: 24px; /* Adjust the size as needed */
+    font-weight: 600; 
+    font-size: 24px; 
 }
 
 .navbar a:hover {
@@ -35,118 +35,117 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stacks the links vertically */
+        flex-direction: column; 
     }
     .navbar a {
-        margin: 0; /* Adjusts margin for stacked layout */
-        text-align: left; /* Optional: Aligns text to the left */
+        margin: 0; 
+        text-align: left; 
     }
 
 }
 /* Main Image Styles */
 
 .main-image img {
-    width: 100%; /* Adjust based on your layout */
+    width: 100%; 
     transition: opacity 2s ease-in-out;
-    margin: 20px auto; /* Add top and bottom margin, center horizontally */
-    height: auto; /* Let height be automatic to maintain aspect ratio */
+    margin: 20px auto; 
+    height: auto; 
     justify-content: center;
 }
 .main-image img { display: block; 
 }
 
 .zmain-image {
-    display: flex; /* Enables flexbox layout */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically if the container has a specified height */
-    width: 100%; /* Adjust based on your layout */
-    height: 100vh; /* Example height; adjust as needed to see vertical centering */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%; 
+    height: 100vh; 
 }
 
 .zmain-image img {
-    width: 70%; /* Adjust based on your layout */
+    width: 70%; 
     transition: opacity 2s ease-in-out;
-    opacity: 0; /* Initially hidden, will be shown via JavaScript */
+    opacity: 0; 
 }
 
 .zmain-image img.fade-in {
-    opacity: 1; /* Fully visible when the 'fade-in' class is added */
+    opacity: 1; 
 }
 
-/* Flex Item Styles */
+
 .flex-item {
     display: flex;
-    flex-direction: row; /* Layout items horizontally */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Align items vertically */
-    gap: 20px; /* Add some space between the image and the text */
-    width: 100%; /* Ensure it takes the full width of its parent */
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    width: 100%; 
 }
 
-/* Image Styles */
+
 .image {
-    width: 150px; /* Adjust based on your image size */
+    width: 150px;
     height: auto;
-    margin-right: 20px; /* Adds space between the image and the text */
+    margin-right: 20px; 
 }
 
-/* Text Styles */
+
 .text {
-    flex-grow: 1; /* Allows the text block to fill the remaining space */
+    flex-grow: 1; 
     font-size: 2vw;
 }
 
-/* Image Container Styles */
+
 .image-container {
     display: flex;
-    justify-content: space-between; /* Distributes space between and around items */
+    justify-content: space-between; 
     
 }
 
 .image-item {
-    flex-basis: calc(33% - 20px); /* Allocates equal width to each item, adjusting for margin */
-    text-align: center; /* Centers the text below the image */
+    flex-basis: calc(33% - 20px); 
+    text-align: center; 
 }
 
 .image-item img {
-    width: 100%; /* Makes the image fill the container */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 .image-item p {
-    margin-top: 10px; /* Adds space between the image and its description */
+    margin-top: 10px; 
 }
 
 
 .twocontainer {
     display: flex;
     background-color: #fcedef;
-    margin: 10px; /* Adds space around the outside of the container */
-    padding: 40px; /* Adds space inside the container, around its content */
+    margin: 10px; 
+    padding: 40px; 
 }
 
 
-/* Existing styles can remain as they are */
-/* Default styles for desktop view */
+
 .onecontainer {
     display: flex;
-    background-color: #d4effa; /* Light blue background */
-    margin: 10px; /* Adds space around the outside of the container */
-    padding: 40px; /* Adds space inside the container, around its content */
+    background-color: #d4effa; 
+    margin: 10px; 
+    padding: 40px; 
 }
 
-/* Additional styles for other elements here */
+
 .oneimage{
     width: 45%; height: auto;
 }
 
 @media (max-width: 768px) {
     .onecontainer, .flex-item {
-        flex-direction: column; /* Stack items vertically on smaller screens */
+        flex-direction: column; 
         margin-top: -10px;
     }
     .oneimage {
-        width: 100%; /* Make the image larger on smaller screens */
+        width: 100%; 
     
     }
     .text {
@@ -159,7 +158,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 
-/* Roboto Font Styles - Condensed */
+
 .roboto-thin, .roboto-light, .roboto-regular, .roboto-medium, .roboto-bold, .roboto-black,
 .roboto-thin-italic, .roboto-light-italic, .roboto-regular-italic, .roboto-medium-italic, .roboto-bold-italic, .roboto-black-italic {
     font-family: "Roboto", sans-serif;
@@ -175,25 +174,25 @@ h1, h2, h3, h4, h5, h6, p {
 
 .bimage-container {
     display: flex;
-    justify-content: space-between; /* Adjusts spacing between items */
-    align-items: center; /* Aligns items vertically */
-    flex-wrap: wrap; /* Allows items to wrap if the screen is too small */
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
     background-color: #fcf6e3;
 
 
 }
 
 .bimage-item {
-    width: 30%; /* Sets the width of each item to 30% of the .aimage-container width */
-    display: flex; /* Enables flexbox layout within each .aimage-item */
-    flex-direction: column; /* Stacks the image and description vertically */
-    align-items: center; /* Centers the items horizontally */
-    text-align: center; /* Centers the text within the description */
+    width: 30%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
 }
 
 .bimage-item img {
-    width: 90%; /* Makes the image fill the width of its .aimage-item container */
-    height: auto; /* Maintains the aspect ratio of the image */
+    width: 90%; 
+    height: auto; 
     align-items: center;
 }
 
@@ -201,96 +200,96 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 .bimage-item {
-    width: 90%; /* Default to full width on smaller screens for a stacked appearance */
-    /* Other styling for .bimage-item */
-    align-items: center; /* Aligns items vertically */
-    flex-wrap: wrap; /* Allows items to wrap if the screen is too small */
-    padding: 5px; /* Adds space inside the borders of .bimage-container */
-    margin: 5px; /* Adds space outside the borders of .bimage-container */
-    justify-content: center; /* Centers children horizontally */
+    width: 90%; 
+   
+    align-items: center; 
+    flex-wrap: wrap; 
+    padding: 5px; 
+    margin: 5px; 
+    justify-content: center; 
 }
 
 
-/* Media query for desktop view */
+
 @media (min-width: 768px) {
     .bimage-container {
-        flex-direction: row; /* Stacks items vertically in the container */
+        flex-direction: row; 
     }
     .bimage-item {
-        width: 29%; /* Increases width for desktop view, but they will still stack due to container's flex-direction */
-        /* No need to adjust flex-direction for individual items here */
+        width: 29%; 
+        
     }
 }
 
 .container {
-    width: 100%; /* Full width of the viewport */
+    width: 100%;
     display: flex;
-    justify-content: center; /* Center the cover container */
-    align-items: center; /* Vertically align */
-    height: 100vh; /* Full viewport height */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
 }
 
 .cover-container {
-    display: flex; /* Enables flexbox layout */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    width: 90%; /* Takes up 90% of the container's width */
-    max-width: 1200px; /* Maximum width to ensure content is not too stretched */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 90%; 
+    max-width: 1200px; 
 }
 .content-container {
     display: flex;
-    align-items: flex-start; /* Aligns the items at the start of the container */
-    background-color: lightgrey; /* Sets the background color to light grey */
-    padding: 20px; /* Adds padding around the container */
+    align-items: flex-start; 
+    background-color: lightgrey; 
+    padding: 20px; 
 }
 
 
 .acontent-container {
-    display: flex; /* Enables flexbox layout */
-    background-color: #f8f3e8; /* Sets the background color to grey */
+    display: flex; 
+    background-color: #f8f3e8; 
     align-items: center;
 }
 
 .amain-image {
-    flex: 1; /* Allows the image container to take half the space */
-    text-align: center; /* Centers the image if it's smaller than the container */
+    flex: 1; 
+    text-align: center; 
 }
 
 .amain-image img {
-    width: 100%; /* Makes the image fully occupy the container width */
-    height: auto; /* Maintains the image aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 .acontent-container p {
-    flex: 1; /* Allows the text to take the other half of the space */
-    padding: 12px; /* Adds some padding around the text for better readability */
-    display: flex; /* Enables flexbox layout for the text container */
-    align-items: center; /* Centers the text vertically */
-    text-align: justify; /* Justifies the text for better readability */
-    justify-content: center; /* Centers the text container's content horizontally */
-    flex-direction: row; /* Aligns the content vertically */
+    flex: 1; 
+    padding: 12px; 
+    display: flex; 
+    align-items: center;
+    text-align: justify; 
+    justify-content: center; 
+    flex-direction: row; 
     
     font-size: 2vw;
 }
 
 .text-container {
-    flex: 1; /* Allows the text container to take the other half of the space */
-    padding: 20px; /* Adds some padding around the text for better readability */
-    display: flex; /* Enables flexbox layout for the text container */
-    align-items: center; /* Centers the text vertically */
-    justify-content: center; /* Centers the text container's content */
-    flex-direction: column; /* Aligns the content vertically */
-    text-align: center; /* Centers the text */
+    flex: 1; 
+    padding: 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center; 
 }
 @media (max-width: 768px) {
     .acontent-container {
-        flex-direction: column; /* Stacks the image and text vertically */
+        flex-direction: column; 
     }
     .acontent-container p {
         font-size: 3vw;
     }
 }
-/* Basic styling for the flex container */
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -298,7 +297,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-/* Styling for each flex item */
+
 .flex-item {
     display: flex;
     align-items: center;
@@ -307,26 +306,26 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #d7d7f5;
 }
 
-/* Image styling */
+
 .image {
-    width: 30%; /* Adjust based on your preference */
+    width: 30%; 
     height: auto;
-    margin-right: 10px; /* Space between image and text */
+    margin-right: 10px; 
 }
 
-/* Text block styling */
+
 .text {
-    flex: 1; /* Allows the text block to fill the remaining space */
+    flex: 1; 
 }
 
-/* Media query for mobile devices */
+
 @media (max-width: 600px) {
     .flex-item {
-        flex-direction: column; /* Stacks the image and text vertically */
+        flex-direction: column; 
     }
 
     .image {
-        margin: 0 auto 50px; /* Centers the image and adds space below */
+        margin: 0 auto 50px; 
         width: 50%;
         height: auto;
     }
@@ -337,9 +336,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .dflex-item {
-    width: 50%; /* Two items per row */
-    box-sizing: border-box; /* Include padding and border in width */
-    padding: 10px; /* Adjust padding as needed */
+    width: 50%; 
+    box-sizing: border-box; 
+    padding: 10px; 
 }
 
 .dimage {
@@ -348,11 +347,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .text {
-    text-align: center; /* Center text */
+    text-align: center; 
 }
 
 @media only screen and (max-width: 600px) {
     .dflex-item {
-        width: 100%; /* Stack items on top of each other */
+        width: 100%; 
     }
 }
