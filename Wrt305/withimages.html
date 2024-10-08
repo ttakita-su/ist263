@@ -47,9 +47,13 @@
 }
 
 img:hover {
-    transform: scale(1.55);
+    transform: scale(1.05);
 }
-
+img.enlarged {
+            transform: scale(1.5);
+            z-index: 1000;
+            position: relative;
+        }
 @media (max-width: 768px) {
     img {
         max-width: 90%;
@@ -167,5 +171,16 @@ img:hover {
     
 
     </div>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var images = document.getElementsByClassName('zoomable');
+            for (var i = 0; i < images.length; i++) {
+                images[i].addEventListener('click', function() {
+                    this.classList.toggle('enlarged');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
