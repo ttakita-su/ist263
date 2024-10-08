@@ -1,4 +1,3 @@
-aling Images
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +12,7 @@ aling Images
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            font-size: 18px;
+            font-size: 18px; /* Increased base font size */
         }
         h2 {
             color: #2c3e50;
@@ -37,34 +36,25 @@ aling Images
             padding: 10px;
             margin: 15px 0;
         }
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0;
-            flex-wrap: wrap;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        .image-container img:hover {
-            transform: scale(1.05);
-        }
-        @media (min-width: 768px) {
-            .image-container img {
-                max-width: 45%;
-            }
-        }
-        @media (min-width: 1024px) {
-            .image-container img {
-                max-width: 30%;
-            }
-        }
+        img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 90%;
+    }
+}
 
     </style>
 </head>
